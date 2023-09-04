@@ -1,4 +1,4 @@
-Account ID,Security Group,Source IP,Source role-site,Ec2 name,Ec2 Id,Destination IP,Destination role-site,port and protocol
+Account ID,Security Group,Source subnet,Source role-site,Ec2 name,Ec2 Id,Ec2 IP,Destination subnet,Destination role-site,port and protocol
 1111111111111,sg-0bbd46ee6973ba718,10.1.12.0/24,R-SRE_NETGROUP-bue1,kubernetes-cluster,i-091e7a07ef8257bd7,10.0.6.70,10.0.6.0/24,R-KUBERNETES_NETGROUP-aws,tcp=9900
 1111111111111,sg-0bbd46ee6973ba718,10.2.12.0/24,R-SRE_NETGROUP-ltv2,kubernetes-cluster,i-091e7a07ef8257bd7,10.0.6.70,10.0.6.0/24,R-KUBERNETES_NETGROUP-aws,tcp=9900
 1111111111111,sg-0bb6a3e66f58cbf66,10.1.10.0/24,R-HR_NETGROUP-bue1,printer-server,i-0cce6b5e85179b69e,10.0.1.160,10.0.1.0/24,R-PRINTER_NETGROUP-aws,tcp=9000
