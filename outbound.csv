@@ -6,7 +6,7 @@ Account ID,Security Group,Ec2 name,Ec2 Id,Ec2 IP,Source subnet,Source role-site,
 1111111111111,sg-0075a5182c0a7cc8d,database-server,i-0bfb1835ca66810b3,10.0.4.129,10.0.4.0/24,R-DATABASE_NETGROUP-aws,security_group-as-destination,srv-server__i-04b6af4fbbd4bc17f;printer-server__i-0a62a35cdcd230677;cctv-server__i-028c19b5f5f9870a3;kubernetes-cluster__i-082a62a1df83086dc,tcp=1000
 1111111111111,sg-03af33934246379dc,srv-server,i-04b6af4fbbd4bc17f,10.0.3.158,10.0.3.0/24,R-SRV_NETGROUP-aws,0.0.0.0/0,R-any-sa,ip=any
 1111111111111,sg-0644a4b5e9b13cfbb,printer-server,i-0a62a35cdcd230677,10.0.1.162,10.0.1.0/24,R-PRINTER_NETGROUP-aws,0.0.0.0/0,R-any-sa,ip=any
-1111111111111,sg-0646520b42ec2192e,cctv-server,i-028c19b5f5f9870a3,10.0.2.177,10.0.2.0/24,R-CCTV_NETGROUP-aws,10.1.13.0/24,R-SEC_NETGROUP-bue1,tcp=8000-9001
-1111111111111,sg-0646520b42ec2192e,cctv-server,i-028c19b5f5f9870a3,10.0.2.177,10.0.2.0/24,R-CCTV_NETGROUP-aws,10.2.13.0/24,R-SEC_NETGROUP-ltv2,tcp=8000-9001
+1111111111111,sg-0646520b42ec2192e,cctv-server,i-028c19b5f5f9870a3,10.0.2.177,10.0.2.0/24,R-CCTV_NETGROUP-aws,10.1.13.0/24,R-SEC_NETGROUP-bue1,tcp=8000-9000
+1111111111111,sg-0646520b42ec2192e,cctv-server,i-028c19b5f5f9870a3,10.0.2.177,10.0.2.0/24,R-CCTV_NETGROUP-aws,10.2.13.0/24,R-SEC_NETGROUP-ltv2,tcp=8000-9000
 1111111111111,sg-0ba1a5565bc1378ea,database-server,i-0bfb1835ca66810b3,10.0.4.129,10.0.4.0/24,R-DATABASE_NETGROUP-aws,0.0.0.0/0,R-any-sa,ip=any
 1111111111111,sg-0e16b0a8cd3cd8144,kubernetes-cluster,i-082a62a1df83086dc,10.0.6.185,10.0.6.0/24,R-KUBERNETES_NETGROUP-aws,0.0.0.0/0,R-any-sa,ip=any
