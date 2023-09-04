@@ -1,0 +1,26 @@
+Account ID,Security Group,Source subnet,Source role-site,Ec2 name,Ec2 Id,Ec2 IP,Destination subnet,Destination role-site,port and protocol
+1111111111111,sg-0bbd46ee6973ba718,10.1.12.0/24,R-SRE_NETGROUP-bue1,kubernetes-cluster,i-091e7a07ef8257bd7,10.0.6.70,10.0.6.0/24,R-KUBERNETES_NETGROUP-aws,tcp=9900
+1111111111111,sg-0bbd46ee6973ba718,10.2.12.0/24,R-SRE_NETGROUP-ltv2,kubernetes-cluster,i-091e7a07ef8257bd7,10.0.6.70,10.0.6.0/24,R-KUBERNETES_NETGROUP-aws,tcp=9900
+1111111111111,sg-00f42edf061de0002,10.1.11.0/24,R-DEV_NETGROUP-bue1,database-server,i-0978aa3c1a66a0352,10.0.4.201,10.0.4.0/24,R-DATABASE_NETGROUP-aws,udp=3000-3200
+1111111111111,sg-00f42edf061de0002,10.2.11.0/24,R-DEV_NETGROUP-ltv2,database-server,i-0978aa3c1a66a0352,10.0.4.201,10.0.4.0/24,R-DATABASE_NETGROUP-aws,udp=3000-3200
+1111111111111,sg-00f42edf061de0002,10.1.11.0/24,R-DEV_NETGROUP-bue1,database-server,i-0978aa3c1a66a0352,10.0.4.201,10.0.4.0/24,R-DATABASE_NETGROUP-aws,tcp=990
+1111111111111,sg-00f42edf061de0002,10.2.11.0/24,R-DEV_NETGROUP-ltv2,database-server,i-0978aa3c1a66a0352,10.0.4.201,10.0.4.0/24,R-DATABASE_NETGROUP-aws,tcp=990
+1111111111111,sg-00f42edf061de0002,10.1.11.0/24,R-DEV_NETGROUP-bue1,database-server,i-0978aa3c1a66a0352,10.0.4.201,10.0.4.0/24,R-DATABASE_NETGROUP-aws,tcp=9010
+1111111111111,sg-00f42edf061de0002,10.2.11.0/24,R-DEV_NETGROUP-ltv2,database-server,i-0978aa3c1a66a0352,10.0.4.201,10.0.4.0/24,R-DATABASE_NETGROUP-aws,tcp=9010
+1111111111111,sg-03ce15fbd0ec62731,10.2.12.0/24,R-SRE_NETGROUP-ltv2,srv-server,i-0ec1c7a2d410c9f1d,10.0.3.12,10.0.3.0/24,R-SRV_NETGROUP-aws,tcp=2000-3000
+1111111111111,sg-03ce15fbd0ec62731,10.1.12.0/24,R-SRE_NETGROUP-bue1,srv-server,i-0ec1c7a2d410c9f1d,10.0.3.12,10.0.3.0/24,R-SRV_NETGROUP-aws,tcp=2000-3000
+1111111111111,sg-03ce15fbd0ec62731,10.1.12.0/24,R-SRE_NETGROUP-bue1,srv-server,i-0ec1c7a2d410c9f1d,10.0.3.12,10.0.3.0/24,R-SRV_NETGROUP-aws,tcp=9900
+1111111111111,sg-03ce15fbd0ec62731,10.2.12.0/24,R-SRE_NETGROUP-ltv2,srv-server,i-0ec1c7a2d410c9f1d,10.0.3.12,10.0.3.0/24,R-SRV_NETGROUP-aws,tcp=9900
+1111111111111,sg-03ce15fbd0ec62731,10.2.12.0/24,R-SRE_NETGROUP-ltv2,srv-server,i-0ec1c7a2d410c9f1d,10.0.3.12,10.0.3.0/24,R-SRV_NETGROUP-aws,udp=53
+1111111111111,sg-03ce15fbd0ec62731,10.1.12.0/24,R-SRE_NETGROUP-bue1,srv-server,i-0ec1c7a2d410c9f1d,10.0.3.12,10.0.3.0/24,R-SRV_NETGROUP-aws,udp=53
+1111111111111,sg-0bb6a3e66f58cbf66,10.1.10.0/24,R-HR_NETGROUP-bue1,printer-server,i-0cce6b5e85179b69e,10.0.1.160,10.0.1.0/24,R-PRINTER_NETGROUP-aws,tcp=9000
+1111111111111,sg-0bb6a3e66f58cbf66,10.2.10.0/24,R-HR_NETGROUP-ltv2,printer-server,i-0cce6b5e85179b69e,10.0.1.160,10.0.1.0/24,R-PRINTER_NETGROUP-aws,tcp=9000
+1111111111111,sg-0bb6a3e66f58cbf66,0.0.0.0/0,R-any-sa,printer-server,i-0cce6b5e85179b69e,10.0.1.160,10.0.1.0/24,R-PRINTER_NETGROUP-aws,udp=1000-1200
+1111111111111,sg-0bb6a3e66f58cbf66,0.0.0.0/0,R-any-sa,printer-server,i-0cce6b5e85179b69e,10.0.1.160,10.0.1.0/24,R-PRINTER_NETGROUP-aws,tcp=443
+1111111111111,sg-0df8df918bc5f2bc2,security_group-as-source,cctv-server__i-0a0bfaf073715f27c;printer-server__i-0cce6b5e85179b69e;database-server__i-0978aa3c1a66a0352;kubernetes-cluster__i-091e7a07ef8257bd7,srv-server,i-0ec1c7a2d410c9f1d,10.0.3.12,10.0.3.0/24,R-SRV_NETGROUP-aws,tcp=80
+1111111111111,sg-0df8df918bc5f2bc2,security_group-as-source,srv-server__i-0ec1c7a2d410c9f1d;printer-server__i-0cce6b5e85179b69e;database-server__i-0978aa3c1a66a0352;kubernetes-cluster__i-091e7a07ef8257bd7,cctv-server,i-0a0bfaf073715f27c,10.0.2.147,10.0.2.0/24,R-CCTV_NETGROUP-aws,tcp=80
+1111111111111,sg-0df8df918bc5f2bc2,security_group-as-source,srv-server__i-0ec1c7a2d410c9f1d;cctv-server__i-0a0bfaf073715f27c;database-server__i-0978aa3c1a66a0352;kubernetes-cluster__i-091e7a07ef8257bd7,printer-server,i-0cce6b5e85179b69e,10.0.1.160,10.0.1.0/24,R-PRINTER_NETGROUP-aws,tcp=80
+1111111111111,sg-0df8df918bc5f2bc2,security_group-as-source,srv-server__i-0ec1c7a2d410c9f1d;cctv-server__i-0a0bfaf073715f27c;printer-server__i-0cce6b5e85179b69e;kubernetes-cluster__i-091e7a07ef8257bd7,database-server,i-0978aa3c1a66a0352,10.0.4.201,10.0.4.0/24,R-DATABASE_NETGROUP-aws,tcp=80
+1111111111111,sg-0df8df918bc5f2bc2,security_group-as-source,srv-server__i-0ec1c7a2d410c9f1d;cctv-server__i-0a0bfaf073715f27c;printer-server__i-0cce6b5e85179b69e;database-server__i-0978aa3c1a66a0352,kubernetes-cluster,i-091e7a07ef8257bd7,10.0.6.70,10.0.6.0/24,R-KUBERNETES_NETGROUP-aws,tcp=80
+1111111111111,sg-039f94a724909d50d,10.2.13.0/24,R-SEC_NETGROUP-ltv2,cctv-server,i-0a0bfaf073715f27c,10.0.2.147,10.0.2.0/24,R-CCTV_NETGROUP-aws,tcp=443
+1111111111111,sg-039f94a724909d50d,10.1.13.0/24,R-SEC_NETGROUP-bue1,cctv-server,i-0a0bfaf073715f27c,10.0.2.147,10.0.2.0/24,R-CCTV_NETGROUP-aws,tcp=443
