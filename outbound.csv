@@ -1,0 +1,12 @@
+Account ID,Security Group,Ec2 name,Ec2 Id,Ec2 IP,Source subnet,Source role-site,Destination subnet,Destination role-site,port and protocol
+1111111111111,sg-022e7bb12100dc860,srv-server,i-073530587833bb8c2,10.0.3.80,10.0.3.0/24,R-SRV_NETGROUP-aws,0.0.0.0/0,R-any-sa,ip=any
+1111111111111,sg-0ab7a5438d13307f3,printer-server,i-0f230379dbf89bdbb,10.0.1.215,10.0.1.0/24,R-PRINTER_NETGROUP-aws,0.0.0.0/0,R-any-sa,ip=any
+1111111111111,sg-0ab8d41be65104cbb,kubernetes-cluster,i-082bc452caa5badce,10.0.6.201,10.0.6.0/24,R-KUBERNETES_NETGROUP-aws,0.0.0.0/0,R-any-sa,ip=any
+1111111111111,sg-0d00df4d3ff8bb466,srv-server,i-073530587833bb8c2,10.0.3.80,10.0.3.0/24,R-SRV_NETGROUP-aws,security_group-as-destination,database-server__i-08afc6caee1377ef2;printer-server__i-0f230379dbf89bdbb;cctv-server__i-078275f5aecda3e2c;kubernetes-cluster__i-082bc452caa5badce,tcp=1000
+1111111111111,sg-0d00df4d3ff8bb466,cctv-server,i-078275f5aecda3e2c,10.0.2.33,10.0.2.0/24,R-CCTV_NETGROUP-aws,security_group-as-destination,srv-server__i-073530587833bb8c2;database-server__i-08afc6caee1377ef2;printer-server__i-0f230379dbf89bdbb;kubernetes-cluster__i-082bc452caa5badce,tcp=1000
+1111111111111,sg-0d00df4d3ff8bb466,kubernetes-cluster,i-082bc452caa5badce,10.0.6.201,10.0.6.0/24,R-KUBERNETES_NETGROUP-aws,security_group-as-destination,srv-server__i-073530587833bb8c2;database-server__i-08afc6caee1377ef2;printer-server__i-0f230379dbf89bdbb;cctv-server__i-078275f5aecda3e2c,tcp=1000
+1111111111111,sg-0d00df4d3ff8bb466,database-server,i-08afc6caee1377ef2,10.0.4.104,10.0.4.0/24,R-DATABASE_NETGROUP-aws,security_group-as-destination,srv-server__i-073530587833bb8c2;printer-server__i-0f230379dbf89bdbb;cctv-server__i-078275f5aecda3e2c;kubernetes-cluster__i-082bc452caa5badce,tcp=1000
+1111111111111,sg-0d00df4d3ff8bb466,printer-server,i-0f230379dbf89bdbb,10.0.1.215,10.0.1.0/24,R-PRINTER_NETGROUP-aws,security_group-as-destination,srv-server__i-073530587833bb8c2;database-server__i-08afc6caee1377ef2;cctv-server__i-078275f5aecda3e2c;kubernetes-cluster__i-082bc452caa5badce,tcp=1000
+1111111111111,sg-0db3ec0404b19e0e1,cctv-server,i-078275f5aecda3e2c,10.0.2.33,10.0.2.0/24,R-CCTV_NETGROUP-aws,10.1.13.0/24,R-SEC_NETGROUP-bue1,tcp=8000-9000
+1111111111111,sg-0db3ec0404b19e0e1,cctv-server,i-078275f5aecda3e2c,10.0.2.33,10.0.2.0/24,R-CCTV_NETGROUP-aws,10.2.13.0/24,R-SEC_NETGROUP-ltv2,tcp=8000-9000
+1111111111111,sg-0e66f8c549e91169a,database-server,i-08afc6caee1377ef2,10.0.4.104,10.0.4.0/24,R-DATABASE_NETGROUP-aws,0.0.0.0/0,R-any-sa,ip=any
