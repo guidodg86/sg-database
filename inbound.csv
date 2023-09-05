@@ -16,8 +16,8 @@ Account ID,Security Group,Source subnet,Source role-site,Ec2 name,Ec2 Id,Ec2 IP,
 1111111111111,sg-0d00df4d3ff8bb466,security_group-as-source,srv-server__i-073530587833bb8c2;database-server__i-08afc6caee1377ef2;printer-server__i-0f230379dbf89bdbb;cctv-server__i-078275f5aecda3e2c,kubernetes-cluster,i-082bc452caa5badce,10.0.6.201,10.0.6.0/24,R-KUBERNETES_NETGROUP-aws,tcp=80
 1111111111111,sg-0d00df4d3ff8bb466,security_group-as-source,srv-server__i-073530587833bb8c2;printer-server__i-0f230379dbf89bdbb;cctv-server__i-078275f5aecda3e2c;kubernetes-cluster__i-082bc452caa5badce,database-server,i-08afc6caee1377ef2,10.0.4.104,10.0.4.0/24,R-DATABASE_NETGROUP-aws,tcp=80
 1111111111111,sg-0d00df4d3ff8bb466,security_group-as-source,srv-server__i-073530587833bb8c2;database-server__i-08afc6caee1377ef2;cctv-server__i-078275f5aecda3e2c;kubernetes-cluster__i-082bc452caa5badce,printer-server,i-0f230379dbf89bdbb,10.0.1.215,10.0.1.0/24,R-PRINTER_NETGROUP-aws,tcp=80
-1111111111111,sg-0db3ec0404b19e0e1,10.1.13.0/24,R-SEC_NETGROUP-bue1,cctv-server,i-078275f5aecda3e2c,10.0.2.33,10.0.2.0/24,R-CCTV_NETGROUP-aws,tcp=442-443
-1111111111111,sg-0db3ec0404b19e0e1,10.2.13.0/24,R-SEC_NETGROUP-ltv2,cctv-server,i-078275f5aecda3e2c,10.0.2.33,10.0.2.0/24,R-CCTV_NETGROUP-aws,tcp=442-443
+1111111111111,sg-0db3ec0404b19e0e1,10.1.13.0/24,R-SEC_NETGROUP-bue1,cctv-server,i-078275f5aecda3e2c,10.0.2.33,10.0.2.0/24,R-CCTV_NETGROUP-aws,tcp=443-444
+1111111111111,sg-0db3ec0404b19e0e1,10.2.13.0/24,R-SEC_NETGROUP-ltv2,cctv-server,i-078275f5aecda3e2c,10.0.2.33,10.0.2.0/24,R-CCTV_NETGROUP-aws,tcp=443-444
 1111111111111,sg-0e66f8c549e91169a,10.1.11.0/24,R-DEV_NETGROUP-bue1,database-server,i-08afc6caee1377ef2,10.0.4.104,10.0.4.0/24,R-DATABASE_NETGROUP-aws,udp=3000-3200
 1111111111111,sg-0e66f8c549e91169a,10.1.11.0/24,R-DEV_NETGROUP-bue1,database-server,i-08afc6caee1377ef2,10.0.4.104,10.0.4.0/24,R-DATABASE_NETGROUP-aws,tcp=990
 1111111111111,sg-0e66f8c549e91169a,10.1.11.0/24,R-DEV_NETGROUP-bue1,database-server,i-08afc6caee1377ef2,10.0.4.104,10.0.4.0/24,R-DATABASE_NETGROUP-aws,tcp=9010
